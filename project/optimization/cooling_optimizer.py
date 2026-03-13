@@ -174,7 +174,7 @@ def suggest_improvements(
     suggestions.append(
         "Recommended vent positions: "
         + ", ".join(
-            f"({v['x']:.1f}, {v['y']:.1f})" for v in opt_result["best_vents"]
+            f"({vent['x']:.1f}, {vent['y']:.1f})" for vent in opt_result["best_vents"]
         )
     )
 

@@ -1,6 +1,6 @@
-# PINNs for Data Center Cooling Optimisation
+# PINNs for Data Center Cooling Optimization
 
-> **Physics-Informed Neural Networks for modelling heat diffusion in data centers and optimising cooling efficiency.**
+> **Physics-Informed Neural Networks for modeling heat diffusion in data centers and optimizing cooling efficiency.**
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red.svg)](https://pytorch.org/)
@@ -31,7 +31,7 @@ and a major cost driver. This project uses **Physics-Informed Neural Networks
 
 * **Model** the temperature distribution across a simplified 2-D data center.
 * **Predict** hotspot locations.
-* **Optimise** cooling-vent placement to reduce peak temperatures and improve
+* **Optimize** cooling-vent placement to reduce peak temperatures and improve
   thermal uniformity.
 
 Unlike purely data-driven approaches, PINNs embed the governing physical laws
@@ -142,7 +142,7 @@ project/
 │
 ├── optimization/
 │   ├── __init__.py
-│   └── cooling_optimizer.py # Vent-placement optimisation
+│   └── cooling_optimizer.py # Vent-placement optimization
 │
 ├── visualization/
 │   ├── __init__.py
@@ -202,9 +202,9 @@ python -m project.main
 This will:
 
 1. Generate a synthetic data center environment.
-2. Train the PINN for 3 000 epochs.
+2. Train the PINN for 3,000 epochs.
 3. Save visualisation plots to `project/outputs/`.
-4. Run cooling-vent optimisation and print suggestions.
+4. Run cooling-vent optimization and print suggestions.
 
 ### Launch the Streamlit dashboard
 
@@ -233,7 +233,7 @@ After training, the pipeline produces the following outputs in `project/outputs/
 | `airflow.png` | Simulated cooling airflow (neg. gradient) |
 | `training_loss.png` | Multi-component loss curves |
 | `temperature_evolution.png` | Time-series snapshots |
-| `optimization_comparison.png` | Before vs. after vent optimisation |
+| `optimization_comparison.png` | Before vs. after vent optimization |
 
 ### Example: Temperature Heat Map
 
@@ -247,9 +247,9 @@ The total loss is the weighted sum of PDE residual, boundary-condition, and
 data-fit components. All three decrease together, indicating that the network
 is simultaneously learning the physics and fitting the data.
 
-### Example: Optimisation
+### Example: Optimization
 
-The random-search optimiser evaluates 40 candidate vent configurations and
+The random-search optimizer evaluates 40 candidate vent configurations and
 selects the one that minimises peak temperature and thermal variance.
 
 ---
@@ -262,7 +262,7 @@ The interactive dashboard allows users to:
 - **Place cooling vents** – set position and cooling temperature.
 - **Adjust room dimensions** and ambient temperature.
 - **Visualise** the resulting temperature field and hotspots in real time.
-- **Run optimisation** to find better vent placements.
+- **Run optimization** to find better vent placements.
 
 ---
 

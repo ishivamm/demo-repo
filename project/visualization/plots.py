@@ -1,5 +1,5 @@
 """
-Visualisation Utilities for the Data Center PINN Project.
+Visualization Utilities for the Data Center PINN Project.
 
 Provides functions to plot:
     - temperature heat maps

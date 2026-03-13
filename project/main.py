@@ -105,7 +105,7 @@ def main() -> None:
     # Step 3: Evaluate & visualise
     # ------------------------------------------------------------------
     print("=" * 60)
-    print("Step 3: Evaluating and saving visualisations")
+    print("Step 3: Evaluating and saving visualizations")
     print("=" * 60)
 
     config = steady_data["config"]
